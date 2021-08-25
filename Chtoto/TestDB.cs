@@ -11,6 +11,8 @@ namespace Chtoto
 
         public DbSet<Teacher> Teachers { get; set; }
 
+        public DbSet<Parent> Parents { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
         {
             dbContextOptionsBuilder.UseSqlServer("Server= desktop-d2h8sgn; Database= Chtoto; Trusted_Connection = True ;");
